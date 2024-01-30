@@ -48,7 +48,7 @@ function Signup() {
                       onSubmit={(values, { setSubmitting, resetForm }) => {
                         if (values) {
                           // Perform a fetch request to the server
-                          fetch("http://localhost:5000/signup", {
+                          fetch("https://password-reset-7q4b.onrender.com/signup", {
                             method: "POST",
                             body: JSON.stringify(values),
                             headers: {

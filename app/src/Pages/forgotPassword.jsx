@@ -39,7 +39,7 @@ function ForgotPassword() {
                           return;
                         }
                         if (values) {
-                          fetch("http://localhost:5000/initiate-password-reset", {
+                          fetch("https://password-reset-7q4b.onrender.com/initiate-password-reset", {
                             method: "POST",
                             body: JSON.stringify(values),
                             headers: {

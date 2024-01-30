@@ -44,7 +44,7 @@ function SetNewPassword() {
                         }
                         if (values) {
                           // Perform a fetch request to the server to update the password
-                          fetch(`http://localhost:5000/update-password/${token}`, {
+                          fetch(`https://password-reset-7q4b.onrender.com/update-password/${token}`, {
                             method: "POST",
                             body: JSON.stringify(values),
                             headers: {
