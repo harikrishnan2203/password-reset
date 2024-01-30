@@ -1,7 +1,5 @@
 const bcrypt = require('bcryptjs');
 const saltRounds = 10;
-const secret = "PASSWORD_RESET_FLOW";
-const jwt = require("jsonwebtoken");
 const { User } = require('../Model/userModel');
 
 // create a new user
