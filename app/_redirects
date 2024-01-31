@@ -1,1 +1,2 @@
-/update-password/*    https://password-reset-7q4b.onrender.com/update-password/:splat    200
+/*    /index.html   200
+/update-password/*    /index.html   200
