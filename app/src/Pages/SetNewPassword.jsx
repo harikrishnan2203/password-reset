@@ -68,7 +68,6 @@ function SetNewPassword() {
                               setSubmitting(false);
                           });
                         }
-                        handleSubmit()
                       }}
                     >
                       {({
