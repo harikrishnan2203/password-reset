@@ -9,7 +9,6 @@ const updatePassword = async (req, res) => {
     // Extract token and password from request parameters and body
     const { token } = req.params;
     const { password } = req.body;
-    console.log(token)
 
     // Find user based on the reset token
     const user = await User.findOne({ token });
@@ -24,7 +23,7 @@ const updatePassword = async (req, res) => {
 
     // Hash the new password
     const hashedPassword = await bcrypt.hash(password, saltRounds);
-
+    
     // Update user's password and clear the reset token
     user.password = hashedPassword;
     user.token = undefined;

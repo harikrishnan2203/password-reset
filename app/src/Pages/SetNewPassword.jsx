@@ -35,10 +35,10 @@ function SetNewPassword() {
                         }
                         return errors;
                       }}
-                      onSubmit={(values, { setSubmitting, resetForm, handleSubmit }) => {
+                      onSubmit={(values, { setSubmitting }) => {
                         // Check if password is provided
                         if (!values.password) {
-                          toast.warn("Please fill in all the required fields");
+                          toast.warn("Please Enter the New Password");
                           setSubmitting(false);
                           return;
                         }
@@ -54,6 +54,7 @@ function SetNewPassword() {
                           .then((result) => result.json())
                           .then((result) => {
                               // Handle the server response
+                              console.log(result)
                               if (result.success) {
                                   toast.success(result.message);
                                   navigate("/login");

@@ -35,7 +35,7 @@ const initiatePasswordReset = async (req, res) => {
     // console.log(verifyUser);
 
     // Construct the reset link
-    const resetLink = `https://password-reset-flow-22.netlify.app/update-password/${token}`;
+    const resetLink = `http://localhost:3000/update-password/${token}`;
 
     // Define email options
     const mailOptions = {
