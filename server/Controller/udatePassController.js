@@ -30,9 +30,9 @@ const updatePassword = async (req, res) => {
     await user.save();
 
     // Return success response
-    res.json({
+    res.status(200).json({
       success: true,
-      message: 'Password reset successful',
+      message: 'Password Updated successfully',
     });
   } catch (error) {
     /// Return a server error response if an internal error occurs
