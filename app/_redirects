@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 /*    /index.html   200
 /update-password/*    /index.html   200
+=======
+/* /index.html 200?
+/update-password/*    https://password-reset-7q4b.onrender.com/update-password/:splat    200
+>>>>>>> da6b0a24c1466f2946c2d511949ba558aea7e886
